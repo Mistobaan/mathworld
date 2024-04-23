@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const nextConfig = withTM({
   output: 'export',
-  baseUrl: "/mathworld",
+  basePath: "/mathworld",
   reactStrictMode: false,
   typescript: {
     ignoreBuildErrors: true,
