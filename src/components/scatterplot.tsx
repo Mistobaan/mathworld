@@ -68,7 +68,8 @@ const EmbeddingScatterPlot = ({className, setSelection}: {className:string, setS
     useEffect(() => {
         console.log("update!")
         const prefs = {
-            source_url: `/_next/static/${TILES_FOLDER_NAME}`, // tiles live in /public in react app
+            // source_url: `/_next/static/${TILES_FOLDER_NAME}`, // tiles live in /public in react app
+            source_url: `/mathworld/_next/static/${TILES_FOLDER_NAME}`, // tiles live in /public in react app
             max_points: 1000000, // a full cap.
             alpha: 25, // Target saturation for the full page.
             zoom_balance: 0.7, // Rate at which points increase size. https://observablehq.com/@bmschmidt/zoom-strategies-for-huge-scatterplots-with-three-js
