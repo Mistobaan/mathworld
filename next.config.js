@@ -4,6 +4,7 @@ const withTM = require('next-transpile-modules')(['@duckdb/react-duckdb', "xterm
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const nextConfig = withTM({
+  output: 'export',
   reactStrictMode: false,
   typescript: {
     ignoreBuildErrors: true,
